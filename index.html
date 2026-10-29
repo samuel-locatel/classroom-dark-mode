@@ -2,165 +2,147 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Classroom Dark Mode — a quieter Classroom</title>
+    <title>Classroom Dark Mode: a dark theme for Google Classroom</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Classroom Dark Mode darkens Google Classroom — assignments, materials, the Stream — and leaves your eyes alone." />
+    <meta name="description" content="A hand-tuned dark theme for Google Classroom. On the moment you install, one switch to turn it off, no tracking. Free for Chrome." />
+    <meta name="color-scheme" content="dark" />
     <link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Kalam:wght@400;700&display=swap" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="site">
-      <nav class="nav">
-        <div class="nav__brand">
-          <img src="assets/logo-mark-light.svg" width="36" height="36" alt="" />
-          <span class="nav__wordmark">CLASSROOM DARK MODE</span>
-        </div>
-        <div class="nav__links">
-          <a href="#features">Features</a>
-          <a href="#preview">Screenshots</a>
-          <a href="#colophon">About</a>
-          <a class="nav__cta" href="#install">Add to Chrome</a>
-        </div>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <a class="nav__brand" href="./" aria-label="Classroom Dark Mode home">
+        <img src="assets/logo-mark-light.svg" width="28" height="28" alt="" />
+        <span>Classroom Dark Mode</span>
+      </a>
+      <nav class="nav__links" aria-label="Site">
+        <a href="#pages">Screens</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#support">Support</a>
+        <a class="nav__install" href="https://chromewebstore.google.com/detail/classroom-dark-mode/ogkjemipcpcmdjhddggfknaaecolmmdd">Add to Chrome</a>
       </nav>
+    </header>
 
-      <main>
-        <section class="hero" id="hero">
-          <div class="hero__glow" aria-hidden="true"></div>
-          <div class="hero__copy">
-            <div class="eyebrow">Chrome extension · available now</div>
-            <h1 class="hero__heading">A quieter Classroom.</h1>
-            <p class="hero__lead">
-              Classroom Dark Mode darkens Google Classroom — assignments, materials, the Stream — and leaves your eyes alone.
-              <em>Study late without burning your eyes.</em>
-            </p>
-            <div class="hero__actions">
-              <a class="btn-primary" href="#install">
-                Add to Chrome
-                <span class="btn-primary__arrow">→</span>
-              </a>
-              <a class="hero__link" href="#preview">See screenshots</a>
-            </div>
-            <div class="hero__meta">
-              <span>Free and open source</span>
-              <span class="sep">·</span>
-              <span>No tracking</span>
-              <span class="sep">·</span>
-              <span>14 kB installed</span>
-            </div>
-          </div>
-          <div class="hero__art">
-            <img src="assets/logo-mark.svg" alt="Classroom Dark Mode mark" />
-          </div>
-        </section>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__sheet acetate">
+          <h1 id="hero-title" class="marker">Lights off.<br />Class stays on.</h1>
+          <p class="hero__lead">A hand-tuned dark theme for Google Classroom, for students reading at midnight and teachers marking work after dinner. It's on the moment you install.</p>
+          <a class="placard" href="https://chromewebstore.google.com/detail/classroom-dark-mode/ogkjemipcpcmdjhddggfknaaecolmmdd">
+            Add to Chrome, it's free
+          </a>
+          <p class="hero__facts">No account. No tracking. Works in English, Português and Español.</p>
+        </div>
 
-        <section class="showcase" id="preview">
-          <div class="eyebrow">screenshots</div>
-          <h2 class="showcase__heading">The same Classroom — composed for evening.</h2>
-          <div class="showcase__grid">
-            <figure class="shot">
-              <img src="assets/screenshots/home.jpg" alt="Classroom home in dark mode" width="1280" height="800" loading="lazy" />
-              <figcaption>Home</figcaption>
-            </figure>
-            <figure class="shot">
-              <img src="assets/screenshots/assignments.jpg" alt="An assignment view in dark mode" width="1280" height="800" loading="lazy" />
-              <figcaption>Assignment</figcaption>
-            </figure>
-            <figure class="shot">
-              <img src="assets/screenshots/calendar.jpg" alt="Classroom calendar in dark mode" width="1280" height="800" loading="lazy" />
-              <figcaption>Calendar</figcaption>
-            </figure>
-            <figure class="shot">
-              <img src="assets/screenshots/pending.jpg" alt="Pending work view in dark mode" width="1280" height="800" loading="lazy" />
-              <figcaption>Pending</figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section class="features" id="features">
-          <div class="eyebrow">features</div>
-          <h2 class="features__heading">Six small decisions, made once.</h2>
-          <div class="features__grid">
-            <article class="feature">
-              <div class="feature__numline"><span>I</span><span class="feature__numline-en">One toggle</span></div>
-              <h3 class="feature__title">One toggle</h3>
-              <p class="feature__body">Turn it on, turn it off, forget about it. No themes, no profiles, no setup wizard — one toolbar click and you're back to studying.</p>
-            </article>
-            <article class="feature">
-              <div class="feature__numline"><span>II</span><span class="feature__numline-en">Reading-first type</span></div>
-              <h3 class="feature__title">Reading-first type</h3>
-              <p class="feature__body">Choose between serif, sans, or monospace for body copy — Classroom Dark Mode recomposes the page without breaking Classroom's layout.</p>
-            </article>
-            <article class="feature">
-              <div class="feature__numline"><span>III</span><span class="feature__numline-en">Follows the sun</span></div>
-              <h3 class="feature__title">Follows the sun</h3>
-              <p class="feature__body">Light mode during the day, dark at night — using your local time. Or lock in one mode if you'd rather.</p>
-            </article>
-            <article class="feature">
-              <div class="feature__numline"><span>IV</span><span class="feature__numline-en">Dimmed media</span></div>
-              <h3 class="feature__title">Dimmed media</h3>
-              <p class="feature__body">Attachments and video covers get a soft veil so the page doesn't flicker as you scroll. Original colors return on hover.</p>
-            </article>
-            <article class="feature">
-              <div class="feature__numline"><span>V</span><span class="feature__numline-en">No telemetry</span></div>
-              <h3 class="feature__title">No telemetry</h3>
-              <p class="feature__body">Classroom Dark Mode sends no data to any server. All your preferences stay in your browser. Open source, auditable.</p>
-            </article>
-            <article class="feature">
-              <div class="feature__numline"><span>VI</span><span class="feature__numline-en">14 kB · zero deps</span></div>
-              <h3 class="feature__title">14 kB · zero deps</h3>
-              <p class="feature__body">A single carefully-injected stylesheet. Works offline, loads before Classroom's content, doesn't delay your login.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="install" id="install">
-          <div>
-            <blockquote class="install__quote">"Where the light rests, the reading begins."</blockquote>
-            <cite class="install__cite">colophon · Classroom Dark Mode</cite>
-          </div>
-          <div class="install__card">
-            <div class="install__card-eyebrow">install</div>
-            <h3 class="install__card-heading">Two clicks, and you're done.</h3>
-            <p class="install__card-body">Available for Chrome, Edge, Brave, and Arc. A Firefox build lands before the end of the semester.</p>
-            <a class="install__card-cta" href="#">Add to Chrome →</a>
-            <div class="install__card-also">
-              also: <a href="#">Edge</a> · <a href="#">Brave</a> · <a href="#">Arc</a>
+        <figure class="projector" data-theme="light" data-accent="green">
+          <div class="stage">
+          <div class="beam" aria-hidden="true"></div>
+          <div class="screen" role="img" aria-label="Illustration of a Google Classroom home page with six class cards, shown in light or dark mode by the switch">
+            <div class="cr">
+              <div class="cr__bar">
+                <span class="cr__menu"></span>
+                <span class="cr__logo"></span>
+                <span class="cr__title">Classroom</span>
+                <span class="cr__avatar">S</span>
+              </div>
+              <div class="cr__body">
+                <ul class="cr__side">
+                  <li class="is-active">Home</li>
+                  <li>Calendar</li>
+                  <li>To-do</li>
+                  <li class="cr__rule"></li>
+                  <li>Biology</li>
+                  <li>World History</li>
+                  <li>Algebra II</li>
+                </ul>
+                <div class="cr__cards">
+                  <div class="cr__card" style="--banner:#1e6fd9"><b>Biology</b><small>Ms. Okafor</small></div>
+                  <div class="cr__card" style="--banner:#c2410c"><b>World History</b><small>Mr. Lindqvist</small></div>
+                  <div class="cr__card" style="--banner:#0f766e"><b>Algebra II</b><small>Mrs. Duarte</small></div>
+                  <div class="cr__card" style="--banner:#7c3aed"><b>Literature</b><small>Mr. Haddad</small></div>
+                  <div class="cr__card" style="--banner:#15803d"><b>Chemistry</b><small>Dr. Ito</small></div>
+                  <div class="cr__card" style="--banner:#be185d"><b>Art Studio</b><small>Ms. Rossi</small></div>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-      </main>
+          <figcaption class="projector__note marker">illustration, your own classes look like this</figcaption>
+          </div>
 
-      <footer class="colophon" id="colophon">
-        <div class="colophon__eyebrow">colophon</div>
-        <div class="colophon__grid">
-          <div>
-            <p class="colophon__lede">Set in Cormorant Garamond and EB Garamond. Built one evening in São Paulo, for anyone who reads after sunset.</p>
-            <div class="colophon__disclaimer">Classroom Dark Mode is not affiliated with Google or Google Classroom.</div>
+          <div class="controls">
+            <button class="switch" type="button" role="switch" aria-checked="false" id="demo-switch">
+              <span class="switch__label">Dark mode</span>
+              <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+            </button>
+            <div class="markers" role="group" aria-label="Accent color">
+              <button type="button" class="marker-pen" data-accent="green" aria-pressed="true" aria-label="Green accent"></button>
+              <button type="button" class="marker-pen" data-accent="blue" aria-pressed="false" aria-label="Blue accent"></button>
+              <button type="button" class="marker-pen" data-accent="orange" aria-pressed="false" aria-label="Orange accent"></button>
+            </div>
           </div>
-          <div class="colophon__column">
-            <h3>links</h3>
-            <ul>
-              <li><a href="#">Chrome Web Store</a></li>
-              <li><a href="#">Firefox Add-ons</a></li>
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Changelog</a></li>
-            </ul>
+        </figure>
+      </section>
+
+      <section class="pages" id="pages" aria-labelledby="pages-title">
+        <div class="pages__head">
+          <h2 id="pages-title" class="marker">Every page, not only the home screen.</h2>
+          <p>Stream, Classwork, assignments, the Calendar, pending work, dialogs and comment threads. Each one was tuned by hand, so nothing is a blunt color inversion.</p>
+        </div>
+        <div class="tray">
+          <div class="tray__slide">
+            <img id="slide-img" src="assets/screenshots/home.jpg" width="1152" height="566" alt="Classroom home in dark mode" />
           </div>
-          <div class="colophon__column">
-            <h3>contact</h3>
-            <ul>
-              <li><a href="mailto:samuellocatel@gmail.com">samuellocatel@gmail.com</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms</a></li>
-            </ul>
+          <div class="tray__thumbs" role="group" aria-label="Choose a screen">
+            <button type="button" aria-pressed="true" data-src="assets/screenshots/home.jpg" data-alt="Classroom home in dark mode">Home</button>
+            <button type="button" aria-pressed="false" data-src="assets/screenshots/assignments.jpg" data-alt="An assignment in dark mode">Assignment</button>
+            <button type="button" aria-pressed="false" data-src="assets/screenshots/calendar.jpg" data-alt="The Classroom calendar in dark mode">Calendar</button>
+            <button type="button" aria-pressed="false" data-src="assets/screenshots/pending.jpg" data-alt="Pending work in dark mode">Pending work</button>
           </div>
         </div>
-        <hr class="colophon__rule" />
-        <div class="colophon__meta">
-          <span>© 2026 Classroom Dark Mode · São Paulo</span>
-          <span>v 0.1 · night build</span>
+      </section>
+
+      <section class="notes" aria-label="How it works">
+        <div class="note acetate">
+          <h2 class="marker">One switch.</h2>
+          <p>Turn it off and on from the toolbar. The page changes instantly, without reloading, and your choice follows you to every Chrome where you're signed in.</p>
         </div>
-      </footer>
-    </div>
+        <div class="note acetate">
+          <h2 class="marker">Three markers.</h2>
+          <p>Pick a green, blue or orange accent for highlights and buttons. Try them on the projector above.</p>
+        </div>
+        <div class="note acetate" id="privacy">
+          <h2 class="marker">Nothing leaves your browser.</h2>
+          <p>The extension stores two things, your on/off switch and your accent color, in Chrome's own storage. It makes no network requests, has no analytics and needs no account. It only runs on classroom.google.com.</p>
+          <a class="textlink" href="privacy.html">Read the privacy policy</a>
+        </div>
+      </section>
+
+      <section class="close" id="support" aria-labelledby="close-title">
+        <h2 id="close-title" class="marker">Give your eyes the evening off.</h2>
+        <a class="placard placard--big" href="https://chromewebstore.google.com/detail/classroom-dark-mode/ogkjemipcpcmdjhddggfknaaecolmmdd">
+          Add to Chrome, it's free
+        </a>
+        <div class="close__support">
+          <p>Already using it? A five-star review helps other students and teachers find it.</p>
+          <div class="close__links">
+            <a class="textlink" href="https://chromewebstore.google.com/detail/classroom-dark-mode/ogkjemipcpcmdjhddggfknaaecolmmdd/reviews">Leave a review</a>
+            <a class="textlink" href="https://buymeacoffee.com/osamuca">Buy me a coffee</a>
+            <a class="textlink" href="mailto:samuellocatel@gmail.com">Email me an idea or a bug</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>Made by Samuel Locatel in São Paulo. Classroom Dark Mode is not affiliated with Google or Google Classroom.</p>
+      <p><a class="textlink" href="privacy.html">Privacy</a> · <a class="textlink" href="mailto:samuellocatel@gmail.com">samuellocatel@gmail.com</a> · © 2026</p>
+    </footer>
+
+    <script src="site.js" defer></script>
   </body>
 </html>
