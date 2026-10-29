@@ -93,15 +93,100 @@
           <h2 id="pages-title" class="marker">Every page, not only the home screen.</h2>
           <p>Stream, Classwork, assignments, the Calendar, pending work, dialogs and comment threads. Each one was tuned by hand, so nothing is a blunt color inversion.</p>
         </div>
-        <div class="tray">
+        <div class="tray" data-accent="green">
           <div class="tray__slide">
-            <img id="slide-img" src="assets/screenshots/home.jpg" width="1152" height="566" alt="Classroom home in dark mode" />
+            <!-- Stream -->
+            <div class="cr cr--dark scr" id="scr-stream" role="img" aria-label="Illustration: a class Stream in dark mode">
+              <div class="cr__bar"><span class="cr__menu"></span><span class="cr__logo"></span><span class="cr__title">Biology</span><span class="cr__avatar">S</span></div>
+              <div class="scr__tabs"><span class="is-on">Stream</span><span>Classwork</span><span>People</span></div>
+              <div class="stream">
+                <div class="stream__banner"><b>Biology</b><small>Period 3 · Ms. Okafor</small></div>
+                <div class="stream__cols">
+                  <div class="stream__side">
+                    <b>Upcoming</b>
+                    <p>Due Thursday<br /><span class="cr__link">Lab report: Photosynthesis</span></p>
+                    <span class="cr__link cr__link--right">View all</span>
+                  </div>
+                  <div class="stream__feed">
+                    <div class="post post--input"><span class="cr__avatar">S</span><span>Announce something to your class</span></div>
+                    <div class="post">
+                      <div class="post__head"><span class="cr__avatar" style="background:#0f766e">O</span><div><b>Ms. Okafor</b><small>Oct 27</small></div></div>
+                      <p>Microscopes are booked for Thursday. Bring your lab notebook and read pages 112–118 before class.</p>
+                      <div class="post__comment">2 class comments</div>
+                    </div>
+                    <div class="post post--task">
+                      <span class="post__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z M14 3v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+                      <div><b>Ms. Okafor posted a new assignment: Lab report: Photosynthesis</b><small>Oct 26</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Assignment -->
+            <div class="cr cr--dark scr" id="scr-assignment" role="img" aria-label="Illustration: an assignment page in dark mode" hidden>
+              <div class="cr__bar"><span class="cr__menu"></span><span class="cr__logo"></span><span class="cr__title">Biology</span><span class="cr__avatar">S</span></div>
+              <div class="task">
+                <div class="task__main">
+                  <div class="task__title"><span class="post__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z M14 3v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><h3>Lab report: Photosynthesis</h3></div>
+                  <small>Ms. Okafor · Oct 26</small>
+                  <div class="task__meta"><span>100 points</span><span>Due Thu, 11:59 PM</span></div>
+                  <p>Write up Thursday's leaf-disk experiment. Include your hypothesis, a table of results, one graph and a short conclusion. Use the template below.</p>
+                  <div class="task__files">
+                    <span class="file"><b>Lab report template</b><small>Google Docs</small></span>
+                    <span class="file"><b>Leaf-disk protocol.pdf</b><small>PDF</small></span>
+                  </div>
+                  <div class="task__comments">Class comments · <span class="cr__link">Add a class comment</span></div>
+                </div>
+                <div class="task__side">
+                  <div class="work">
+                    <div class="work__head"><b>Your work</b><small>Assigned</small></div>
+                    <span class="work__add">Add or create</span>
+                    <span class="work__done">Mark as done</span>
+                  </div>
+                  <div class="work work--private"><b>Private comments</b><span class="cr__link">Add comment to Ms. Okafor</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Calendar -->
+            <div class="cr cr--dark scr" id="scr-calendar" role="img" aria-label="Illustration: the Classroom calendar week view in dark mode" hidden>
+              <div class="cr__bar"><span class="cr__menu"></span><span class="cr__logo"></span><span class="cr__title">Calendar</span><span class="cr__avatar">S</span></div>
+              <div class="cal">
+                <div class="cal__top"><span class="cal__select">All classes</span><span class="cal__range">Oct 26 – Nov 1, 2026</span></div>
+                <div class="cal__grid">
+                  <div class="cal__day"><small>Sun</small><b>26</b></div>
+                  <div class="cal__day"><small>Mon</small><b>27</b><i style="--banner:#c2410c">History essay draft</i></div>
+                  <div class="cal__day"><small>Tue</small><b>28</b><i style="--banner:#0f766e">Algebra quiz 4</i></div>
+                  <div class="cal__day is-today"><small>Wed</small><b>29</b></div>
+                  <div class="cal__day"><small>Thu</small><b>30</b><i style="--banner:#1e6fd9">Lab report: Photosynthesis</i><i style="--banner:#7c3aed">Reading log</i></div>
+                  <div class="cal__day"><small>Fri</small><b>31</b><i style="--banner:#be185d">Portfolio check</i></div>
+                  <div class="cal__day"><small>Sat</small><b>1</b></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- To-do -->
+            <div class="cr cr--dark scr" id="scr-todo" role="img" aria-label="Illustration: the To-do list of pending work in dark mode" hidden>
+              <div class="cr__bar"><span class="cr__menu"></span><span class="cr__logo"></span><span class="cr__title">To-do</span><span class="cr__avatar">S</span></div>
+              <div class="scr__tabs"><span class="is-on">Assigned</span><span>Missing</span><span>Done</span></div>
+              <div class="todo">
+                <div class="todo__group"><b>This week</b><small>4</small></div>
+                <div class="todo__item"><span class="post__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z M14 3v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div><b>History essay draft</b><small>World History</small></div><em>Due Mon, 11:59 PM</em></div>
+                <div class="todo__item"><span class="post__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z M14 3v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div><b>Algebra quiz 4</b><small>Algebra II</small></div><em>Due Tue, 8:00 AM</em></div>
+                <div class="todo__item"><span class="post__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z M14 3v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div><b>Lab report: Photosynthesis</b><small>Biology</small></div><em>Due Thu, 11:59 PM</em></div>
+                <div class="todo__item"><span class="post__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z M14 3v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div><b>Reading log</b><small>Literature</small></div><em>Due Thu, 11:59 PM</em></div>
+                <div class="todo__group"><b>Next week</b><small>1</small></div>
+                <div class="todo__item"><span class="post__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z M14 3v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div><b>Portfolio check</b><small>Art Studio</small></div><em>Due Fri, Nov 6</em></div>
+              </div>
+            </div>
+            <p class="tray__note marker">illustrations of Classroom with the extension on</p>
           </div>
           <div class="tray__thumbs" role="group" aria-label="Choose a screen">
-            <button type="button" aria-pressed="true" data-src="assets/screenshots/home.jpg" data-alt="Classroom home in dark mode">Home</button>
-            <button type="button" aria-pressed="false" data-src="assets/screenshots/assignments.jpg" data-alt="An assignment in dark mode">Assignment</button>
-            <button type="button" aria-pressed="false" data-src="assets/screenshots/calendar.jpg" data-alt="The Classroom calendar in dark mode">Calendar</button>
-            <button type="button" aria-pressed="false" data-src="assets/screenshots/pending.jpg" data-alt="Pending work in dark mode">Pending work</button>
+            <button type="button" aria-pressed="true" data-screen="scr-stream">Stream</button>
+            <button type="button" aria-pressed="false" data-screen="scr-assignment">Assignment</button>
+            <button type="button" aria-pressed="false" data-screen="scr-calendar">Calendar</button>
+            <button type="button" aria-pressed="false" data-screen="scr-todo">To-do</button>
           </div>
         </div>
       </section>
