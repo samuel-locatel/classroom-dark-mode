@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" fill="none">
+  
+  <circle cx="64" cy="64" r="62" fill="#0E1320"></circle>
+  <circle cx="64" cy="64" r="56" fill="none" stroke="#C8A45C" stroke-width="0.75" opacity="0.55"></circle>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#C8A45C" stroke-width="1.5"></circle>
+  <rect x="34" y="38" width="60" height="44" rx="3" fill="#0A0E18" stroke="#C8A45C" stroke-width="1.5"></rect>
+  <rect x="32" y="82" width="64" height="2.4" rx="1.2" fill="#C8A45C"></rect>
+  <line x1="40" y1="84.4" x2="38" y2="92" stroke="#C8A45C" stroke-width="1.2" stroke-linecap="round"></line>
+  <line x1="88" y1="84.4" x2="90" y2="92" stroke="#C8A45C" stroke-width="1.2" stroke-linecap="round"></line>
+  <mask id="wm-light">
+    <rect width="128" height="128" fill="black"></rect>
+    <circle cx="62" cy="60" r="13" fill="white"></circle>
+    <circle cx="68" cy="56" r="11" fill="black"></circle>
+  </mask>
+  <rect width="128" height="128" fill="#E8DCC0" mask="url(#wm-light)" opacity="0.92"></rect>
+  <circle cx="78" cy="46" r="1.1" fill="#E8DCC0"></circle>
+  <circle cx="82" cy="52" r="0.7" fill="#E8DCC0" opacity="0.7"></circle>
+
+  
+  <text x="148" y="78" font-family="&#39;Cormorant Garamond&#39;, &#39;EB Garamond&#39;, Georgia, serif" font-weight="500" font-size="56" fill="#0E1320" letter-spacing="6">PENUMBRA</text>
+  <text x="150" y="100" font-family="&#39;EB Garamond&#39;, Georgia, serif" font-style="italic" font-size="15" fill="#7A5A1F" letter-spacing="2">a quieter Classroom</text>
+</svg>

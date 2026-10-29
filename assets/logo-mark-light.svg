@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  
+  <circle cx="64" cy="64" r="62" fill="#F5EFE2"></circle>
+  <circle cx="64" cy="64" r="56" fill="none" stroke="#7A5A1F" stroke-width="0.75" opacity="0.5"></circle>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#7A5A1F" stroke-width="1.5"></circle>
+
+  <g>
+    <rect x="34" y="38" width="60" height="44" rx="3" fill="#0E1320" stroke="#7A5A1F" stroke-width="1.5"></rect>
+    <rect x="36.5" y="40.5" width="55" height="39" rx="1.5" fill="#0E1320"></rect>
+    <rect x="32" y="82" width="64" height="2.4" rx="1.2" fill="#7A5A1F"></rect>
+    <line x1="40" y1="84.4" x2="38" y2="92" stroke="#7A5A1F" stroke-width="1.2" stroke-linecap="round"></line>
+    <line x1="88" y1="84.4" x2="90" y2="92" stroke="#7A5A1F" stroke-width="1.2" stroke-linecap="round"></line>
+  </g>
+
+  <mask id="chalk-light">
+    <rect width="128" height="128" fill="black"></rect>
+    <circle cx="62" cy="60" r="13" fill="white"></circle>
+    <circle cx="68" cy="56" r="11" fill="black"></circle>
+  </mask>
+  <rect width="128" height="128" fill="#E8DCC0" mask="url(#chalk-light)" opacity="0.92"></rect>
+  <circle cx="62" cy="60" r="14.5" fill="none" stroke="#E8DCC0" stroke-width="0.4" opacity="0.2"></circle>
+  <circle cx="78" cy="46" r="1.1" fill="#E8DCC0"></circle>
+  <circle cx="82" cy="52" r="0.7" fill="#E8DCC0" opacity="0.7"></circle>
+</svg>
